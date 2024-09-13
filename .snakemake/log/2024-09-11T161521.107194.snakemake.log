@@ -1,0 +1,33 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+extract_umi        1
+total              1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 16:15:21 2024]
+localrule extract_umi:
+    input: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz
+    resources: tmpdir=/tmp
+
+[Wed Sep 11 16:15:22 2024]
+Error in rule extract_umi:
+    jobid: 0
+    input: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-11T161521.107194.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,260 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job          count
+---------  -------
+all              1
+ciriquant       12
+total           13
+
+Select jobs to execute...
+Execute 12 jobs...
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/A_circRNA.gtf
+    jobid: 1
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/A_circRNA.gtf
+    wildcards: sample=A
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/E_circRNA.gtf
+    jobid: 57
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/E_circRNA.gtf
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/C_circRNA.gtf
+    jobid: 29
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/C_circRNA.gtf
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 1
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/A_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/ -p A_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 57
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/E_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/ -p E_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/A_DNase_circRNA.gtf
+    jobid: 8
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/A_DNase_circRNA.gtf
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/C_DNase_circRNA.gtf
+    jobid: 36
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/C_DNase_circRNA.gtf
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 29
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/C_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/ -p C_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/E_DNase_circRNA.gtf
+    jobid: 64
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/E_DNase_circRNA.gtf
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 36
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/C_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/ -p C_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 8
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/A_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/ -p A_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/B_circRNA.gtf
+    jobid: 15
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/B_circRNA.gtf
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 64
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/E_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/ -p E_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/D_circRNA.gtf
+    jobid: 43
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/D_circRNA.gtf
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/positive_circRNA.gtf
+    jobid: 71
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/positive_circRNA.gtf
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 15
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/B_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/ -p B_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 43
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/D_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/ -p D_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/B_DNase_circRNA.gtf
+    jobid: 22
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/B_DNase_circRNA.gtf
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/positive_DNase_circRNA.gtf
+    jobid: 78
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/positive_DNase_circRNA.gtf
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+[Fri Sep 13 12:32:14 2024]
+
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 71
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/positive_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/ -p positive_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule ciriquant:
+    jobid: 22
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/B_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/ -p B_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Fri Sep 13 12:32:14 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/D_DNase_circRNA.gtf
+    jobid: 50
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/D_DNase_circRNA.gtf
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 12:32:14 2024]
+[Fri Sep 13 12:32:14 2024]
+Error in rule ciriquant:
+    jobid: 50
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/D_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/ -p D_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule ciriquant:
+    jobid: 78
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/positive_DNase_circRNA.gtf
+    conda-env: /home/jverwilt/resources/tools/CIRIquant/CIRIquant_env
+    shell:
+        CIRIquant --config /home/jverwilt/JV2408_tear_RNA/code/config.yml -1 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq -2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq -o /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/ -p positive_DNase_circRNA
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-13T123210.516761.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

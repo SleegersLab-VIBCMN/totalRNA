@@ -1,0 +1,9 @@
+host: megalon
+Building DAG of jobs...
+MissingInputException in rule extract_umi in file /home/jverwilt/JV2408_tear_RNA/code/Snakefile, line 21:
+Missing input files for rule extract_umi:
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/02_extract_umi/.A_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/02_extract_umi/.A_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/02_extract_umi/UMIextract.log
+    wildcards: sample=.A
+    affected files:
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/01_combine/.A_R1.fastq.gz
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/01_combine/.A_R2.fastq.gz

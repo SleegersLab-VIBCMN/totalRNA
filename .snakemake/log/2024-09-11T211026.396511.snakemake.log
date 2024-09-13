@@ -1,0 +1,26 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+map          1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 21:10:26 2024]
+localrule map:
+    input: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    resources: tmpdir=/tmp
+
+[Wed Sep 11 21:20:19 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-09-11T211026.396511.snakemake.log

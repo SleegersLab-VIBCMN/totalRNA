@@ -1,0 +1,80 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job             count
+------------  -------
+all                 1
+bam_to_fastq       12
+dedup              11
+index               8
+map                 8
+total              40
+
+Select jobs to execute...
+Execute 4 jobs...
+
+[Thu Sep 12 18:11:01 2024]
+localrule bam_to_fastq:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R2.fastq
+    jobid: 1
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R2.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R1.fastq
+    wildcards: sample=A
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 18:11:01 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    jobid: 15
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R2.fastq.gz
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 18:11:02 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 69
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R1.fastq.gz
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 18:11:02 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/02_extract_umi/C_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/02_extract_umi/C_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 33
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 18:11:41 2024]
+Error in rule bam_to_fastq:
+    jobid: 1
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R2.fastq
+    shell:
+        samtools sort -n /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam | bedtools bam2fastq -i stdin -fq /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R1.fastq -fq2 /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A_dedup_R2.fastq
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Sep 12 18:41:16 2024]
+Finished job 15.
+1 of 40 steps (2%) done
+[Thu Sep 12 18:48:40 2024]
+Finished job 69.
+2 of 40 steps (5%) done
+[Thu Sep 12 19:01:27 2024]
+Finished job 33.
+3 of 40 steps (8%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-12T181059.019968.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

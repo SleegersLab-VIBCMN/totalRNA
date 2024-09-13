@@ -1,0 +1,33 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+combine        1
+total          1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 16:02:03 2024]
+localrule combine:
+    input: ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L001_R1_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L002_R1_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L001_R2_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L002_R2_001.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R2.fastq.gz
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R2.fastq.gz
+    resources: tmpdir=/tmp
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule combine in file /home/jverwilt/JV2408_tear_RNA/code/Snakefile, line 2:
+Job 0 completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R1.fastq.gz (missing locally, parent dir contents: A_DNase_R1.fastq.gzcat, A_DNase_R2.fastq.gz)
+Removing output files of failed job combine since they might be corrupted:
+../output/20240906_AV242402_4843/A_DNase/01_reads/A_DNase_R2.fastq.gz
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-11T160203.234934.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

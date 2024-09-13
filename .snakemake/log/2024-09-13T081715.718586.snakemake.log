@@ -1,0 +1,184 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+count       12
+total       13
+
+Select jobs to execute...
+Execute 12 jobs...
+
+[Fri Sep 13 08:17:17 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/05_count/C_htseq_dedup_counts.txt
+    jobid: 25
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/05_count/C_htseq_dedup_counts.txt
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/05_count/E_htseq_dedup_counts.txt
+    jobid: 49
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/05_count/E_htseq_dedup_counts.txt
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/05_count/C_DNase_htseq_dedup_counts.txt
+    jobid: 31
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/05_count/C_DNase_htseq_dedup_counts.txt
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/05_count/A_htseq_dedup_counts.txt
+    jobid: 1
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/05_count/A_htseq_dedup_counts.txt
+    wildcards: sample=A
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/05_count/positive_DNase_htseq_dedup_counts.txt
+    jobid: 67
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/05_count/positive_DNase_htseq_dedup_counts.txt
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/05_count/B_DNase_htseq_dedup_counts.txt
+    jobid: 19
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/05_count/B_DNase_htseq_dedup_counts.txt
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/05_count/D_DNase_htseq_dedup_counts.txt
+    jobid: 43
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/05_count/D_DNase_htseq_dedup_counts.txt
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/05_count/positive_htseq_dedup_counts.txt
+    jobid: 61
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/05_count/positive_htseq_dedup_counts.txt
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/05_count/B_htseq_dedup_counts.txt
+    jobid: 13
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/05_count/B_htseq_dedup_counts.txt
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/05_count/D_htseq_dedup_counts.txt
+    jobid: 37
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/05_count/D_htseq_dedup_counts.txt
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/05_count/E_DNase_htseq_dedup_counts.txt
+    jobid: 55
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/05_count/E_DNase_htseq_dedup_counts.txt
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+
+[Fri Sep 13 08:17:18 2024]
+localrule count:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/05_count/A_DNase_htseq_dedup_counts.txt
+    jobid: 7
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 08:23:13 2024]
+Finished job 19.
+1 of 13 steps (8%) done
+[Fri Sep 13 08:23:28 2024]
+Finished job 1.
+2 of 13 steps (15%) done
+[Fri Sep 13 08:23:33 2024]
+Finished job 25.
+3 of 13 steps (23%) done
+[Fri Sep 13 08:23:42 2024]
+Finished job 49.
+4 of 13 steps (31%) done
+[Fri Sep 13 08:23:45 2024]
+Finished job 43.
+5 of 13 steps (38%) done
+[Fri Sep 13 08:25:34 2024]
+Finished job 13.
+6 of 13 steps (46%) done
+[Fri Sep 13 08:26:21 2024]
+Finished job 7.
+7 of 13 steps (54%) done
+[Fri Sep 13 08:26:55 2024]
+Finished job 31.
+8 of 13 steps (62%) done
+[Fri Sep 13 08:27:51 2024]
+Finished job 55.
+9 of 13 steps (69%) done
+[Fri Sep 13 08:29:08 2024]
+Finished job 37.
+10 of 13 steps (77%) done
+[Fri Sep 13 08:37:50 2024]
+Finished job 67.
+11 of 13 steps (85%) done
+[Fri Sep 13 08:40:19 2024]
+Finished job 61.
+12 of 13 steps (92%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Sep 13 08:40:19 2024]
+localrule all:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/05_count/A_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/05_count/A_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/05_count/B_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/05_count/B_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/05_count/C_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/05_count/C_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/05_count/D_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/05_count/D_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/05_count/E_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/05_count/E_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/05_count/positive_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/05_count/positive_DNase_htseq_dedup_counts.txt
+    jobid: 0
+    reason: Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/05_count/B_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/05_count/D_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/05_count/positive_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/05_count/C_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/05_count/E_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/05_count/B_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/05_count/positive_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/05_count/D_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/05_count/A_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/05_count/E_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/05_count/C_DNase_htseq_dedup_counts.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/05_count/A_htseq_dedup_counts.txt
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 08:40:19 2024]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: .snakemake/log/2024-09-13T081715.718586.snakemake.log

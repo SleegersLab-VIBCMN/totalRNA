@@ -1,0 +1,129 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+dedup       12
+map         12
+total       25
+
+Select jobs to execute...
+Execute 3 jobs...
+
+[Thu Sep 12 13:40:06 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 46
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:40:07 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 38
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:40:07 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    jobid: 18
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 14:17:05 2024]
+Finished job 46.
+1 of 25 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 14:17:05 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    jobid: 10
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 14:19:43 2024]
+Finished job 18.
+2 of 25 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 14:19:43 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/02_extract_umi/D_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/02_extract_umi/D_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam
+    jobid: 26
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 14:20:29 2024]
+Finished job 38.
+3 of 25 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 14:20:29 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    jobid: 34
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 14:49:21 2024]
+Finished job 10.
+4 of 25 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 14:49:21 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+    jobid: 9
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 14:49:41 2024]
+Error in rule dedup:
+    jobid: 9
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+    conda-env: base
+    shell:
+        umi_tools dedup -I /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam --output-stats=/home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/deduplicated -S /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam -L /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job dedup since they might be corrupted:
+/home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+[Thu Sep 12 15:00:28 2024]
+Finished job 34.
+5 of 25 steps (20%) done
+[Thu Sep 12 15:02:54 2024]
+Finished job 26.
+6 of 25 steps (24%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-12T133946.907551.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

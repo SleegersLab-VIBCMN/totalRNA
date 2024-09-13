@@ -1,0 +1,27 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+dedup        1
+total        1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 21:35:18 2024]
+localrule dedup:
+    input: ../output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    output: ../output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 00:02:48 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-09-11T213518.716754.snakemake.log

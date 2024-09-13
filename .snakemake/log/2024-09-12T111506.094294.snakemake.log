@@ -1,0 +1,17 @@
+host: megalon
+Building DAG of jobs...
+MissingInputException in rule all in file /home/jverwilt/JV2408_tear_RNA/code/Snakefile, line 13:
+Missing input files for rule all:
+    affected files:
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.positive/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.D/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.B/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.C_DNase/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.D_DNase/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.positive_DNase/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.E_DNase/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.E/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.C/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.B_DNase/02_extract_umi/UMIextract.log
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/.A_DNase/02_extract_umi/UMIextract.log

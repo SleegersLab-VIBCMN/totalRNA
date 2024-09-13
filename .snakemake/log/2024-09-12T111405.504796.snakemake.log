@@ -1,0 +1,10 @@
+host: megalon
+Building DAG of jobs...
+InputFunctionException in rule combine in file /home/jverwilt/JV2408_tear_RNA/code/Snakefile, line 19:
+Error:
+  ValueError: can only convert an array of size 1 to a Python scalar
+Wildcards:
+  sample=.A
+Traceback:
+  File "/home/jverwilt/JV2408_tear_RNA/code/Snakefile", line 21, in <lambda>
+  File "/home/jverwilt/miniconda3/envs/snakemake/lib/python3.12/site-packages/pandas/core/base.py", line 418, in item (rule combine, line 26, /home/jverwilt/JV2408_tear_RNA/code/Snakefile)

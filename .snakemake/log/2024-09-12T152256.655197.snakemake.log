@@ -1,0 +1,61 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 3
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+all                1
+dedup             12
+extract_umi       12
+index             12
+map               12
+total             49
+
+Select jobs to execute...
+Execute 3 jobs...
+
+[Thu Sep 12 15:22:58 2024]
+localrule extract_umi:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/01_combine/B_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/01_combine/B_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/UMIextract.log
+    jobid: 13
+    reason: Forced execution
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+
+[Thu Sep 12 15:22:59 2024]
+localrule extract_umi:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/01_combine/D_DNase_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/01_combine/D_DNase_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/02_extract_umi/D_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/02_extract_umi/D_DNase_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/02_extract_umi/UMIextract.log
+    jobid: 38
+    reason: Forced execution
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+
+[Thu Sep 12 15:22:59 2024]
+localrule extract_umi:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/UMIextract.log
+    jobid: 53
+    reason: Forced execution
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+Terminating processes on user request, this might take some time.
+[Thu Sep 12 15:40:20 2024]
+Error in rule extract_umi:
+    jobid: 53
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/UMIextract.log
+    conda-env: base
+    shell:
+        umi_tools extract --extract-method=string -I /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R2.fastq.gz -L /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/UMIextract.log --bc-pattern=NNNNNNNN --read2-in=/home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/01_combine/positive_R1.fastq.gz -S /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R2.fastq.gz --read2-out=/home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R1.fastq.gz
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+

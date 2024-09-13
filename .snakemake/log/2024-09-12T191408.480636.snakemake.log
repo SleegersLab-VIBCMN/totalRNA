@@ -1,0 +1,393 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+dedup       11
+index        8
+map          5
+total       25
+
+Select jobs to execute...
+Execute 4 jobs...
+
+[Thu Sep 12 19:14:10 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/02_extract_umi/B_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/02_extract_umi/B_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 17
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 19:14:11 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/03_map/D_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/03_map/D_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/umidedup.txt
+    jobid: 36
+    reason: Forced execution
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+
+[Thu Sep 12 19:14:11 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam.bai
+    jobid: 60
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 19:14:11 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam.bai
+    jobid: 30
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 19:14:30 2024]
+Finished job 30.
+1 of 25 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 19:14:30 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 7
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam; Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R2.fastq.gz
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 19:14:46 2024]
+Finished job 60.
+2 of 25 steps (8%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 19:14:46 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/umidedup.txt
+    jobid: 26
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 19:45:29 2024]
+Finished job 17.
+3 of 25 steps (12%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 19:45:30 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam.bai
+    jobid: 20
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam.bai; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 19:45:39 2024]
+Finished job 20.
+4 of 25 steps (16%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 19:45:39 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/umidedup.txt
+    jobid: 16
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 19:59:56 2024]
+Finished job 7.
+5 of 25 steps (20%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 19:59:56 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/03_map/positive.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/03_map/positive.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/umidedup.txt
+    jobid: 51
+    reason: Forced execution
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 20:38:22 2024]
+Finished job 36.
+6 of 25 steps (24%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 20:38:22 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    jobid: 22
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R1.fastq.gz
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 21:12:04 2024]
+Finished job 22.
+7 of 25 steps (28%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 21:12:05 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam.bai
+    jobid: 25
+    reason: Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 21:12:14 2024]
+Finished job 25.
+8 of 25 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 21:12:14 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/umidedup.txt
+    jobid: 21
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 21:21:49 2024]
+Finished job 16.
+9 of 25 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 21:21:49 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 47
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R1.fastq.gz
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 21:56:40 2024]
+Finished job 47.
+10 of 25 steps (40%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 21:56:40 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam.bai
+    jobid: 50
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam.bai; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 21:57:01 2024]
+Finished job 50.
+11 of 25 steps (44%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 21:57:01 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/umidedup.txt
+    jobid: 46
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 22:06:54 2024]
+Finished job 21.
+12 of 25 steps (48%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 22:06:54 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam.bai
+    jobid: 15
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 22:07:11 2024]
+Finished job 15.
+13 of 25 steps (52%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 22:07:11 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/umidedup.txt
+    jobid: 56
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 22:09:05 2024]
+Finished job 26.
+14 of 25 steps (56%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 22:09:05 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/umidedup.txt
+    jobid: 31
+    reason: Forced execution
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 22:40:30 2024]
+Finished job 51.
+15 of 25 steps (60%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 22:40:30 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam.bai
+    jobid: 10
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam.bai; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 22:40:45 2024]
+Finished job 10.
+16 of 25 steps (64%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 22:40:45 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/umidedup.txt
+    jobid: 6
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam.bai, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 23:02:39 2024]
+Finished job 31.
+17 of 25 steps (68%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 23:02:39 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    jobid: 42
+    reason: Updated input files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R2.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R1.fastq.gz
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 23:39:36 2024]
+Finished job 42.
+18 of 25 steps (72%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 23:39:36 2024]
+localrule index:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam.bai
+    jobid: 45
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam.bai; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+[Thu Sep 12 23:39:46 2024]
+Finished job 45.
+19 of 25 steps (76%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 23:39:46 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+    jobid: 11
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Thu Sep 12 23:56:42 2024]
+Finished job 46.
+20 of 25 steps (80%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Sep 12 23:56:42 2024]
+localrule dedup:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam.bai
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/umidedup.txt
+    jobid: 41
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/umidedup.txt; Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam.bai
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+Activating conda environment: base
+[Fri Sep 13 00:20:04 2024]
+Finished job 11.
+21 of 25 steps (84%) done
+[Fri Sep 13 00:33:16 2024]
+Finished job 56.
+22 of 25 steps (88%) done
+[Fri Sep 13 00:49:00 2024]
+Finished job 41.
+23 of 25 steps (92%) done
+[Fri Sep 13 00:57:54 2024]
+Finished job 6.
+24 of 25 steps (96%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri Sep 13 00:57:54 2024]
+localrule all:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/umidedup.txt
+    jobid: 0
+    reason: Input files updated by another job: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/umidedup.txt, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup.bam, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/umidedup.txt
+    resources: tmpdir=/tmp
+
+[Fri Sep 13 00:57:54 2024]
+Finished job 0.
+25 of 25 steps (100%) done
+Complete log: .snakemake/log/2024-09-12T191408.480636.snakemake.log

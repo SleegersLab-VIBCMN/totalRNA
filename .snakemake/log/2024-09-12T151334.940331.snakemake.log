@@ -1,0 +1,28 @@
+host: megalon
+Building DAG of jobs...
+MissingInputException in rule all in file /home/jverwilt/JV2408_tear_RNA/code/Snakefile, line 12:
+Missing input files for rule all:
+    affected files:
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup.bam
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/umidedup.txt
+        /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup.bam

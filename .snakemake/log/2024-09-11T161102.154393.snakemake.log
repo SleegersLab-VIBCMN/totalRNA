@@ -1,0 +1,26 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job        count
+-------  -------
+combine        1
+total          1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 16:11:02 2024]
+localrule combine:
+    input: ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L001_R1_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L002_R1_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L001_R2_001.fastq.gz, ../data/20240906_AV242402_4843/reads/A_DNase/4843_01_A_DNase_240807_240626_first_test_S5_L002_R2_001.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz
+    resources: tmpdir=/tmp
+
+[Wed Sep 11 16:11:06 2024]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2024-09-11T161102.154393.snakemake.log

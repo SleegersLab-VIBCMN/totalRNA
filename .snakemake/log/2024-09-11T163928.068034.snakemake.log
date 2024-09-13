@@ -1,0 +1,38 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job            count
+-----------  -------
+extract_umi        1
+total              1
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 11 16:39:28 2024]
+localrule extract_umi:
+    input: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log
+    jobid: 0
+    reason: Missing output files: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz
+    resources: tmpdir=/tmp
+
+[Wed Sep 11 16:39:28 2024]
+Error in rule extract_umi:
+    jobid: 0
+    input: ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz
+    output: ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz, ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log
+    conda-env: base
+    shell:
+        /home/jverwilt/.local/bin/umi_tools extract --extract-method=string -I ../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R2.fastq.gz --bc-pattern=NNNNNNNN -L ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/UMIextract.log --read2-in=../output/20240906_AV242402_4843/A_DNase/01_combine/A_DNase_R1.fastq.gz -S ../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R2_extract_umi.fastq.gz --read2-out=../output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_R1_extract_umi.fastq.gz
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-09-11T163928.068034.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

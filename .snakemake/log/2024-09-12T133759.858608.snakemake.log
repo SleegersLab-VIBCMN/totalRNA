@@ -1,0 +1,4 @@
+host: megalon
+Building DAG of jobs...
+WorkflowError:
+Batching rule map has less input files than batches. Please choose a smaller number of batches.

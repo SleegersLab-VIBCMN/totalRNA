@@ -1,0 +1,136 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job      count
+-----  -------
+all          1
+dedup       12
+map         12
+total       25
+
+Select jobs to execute...
+Execute 12 jobs...
+
+[Thu Sep 12 13:06:35 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/02_extract_umi/positive_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/03_map/positive_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 46
+    reason: Forced execution
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/02_extract_umi/E_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/03_map/E_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 38
+    reason: Forced execution
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/02_extract_umi/D_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/02_extract_umi/D_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/03_map/D_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 30
+    reason: Forced execution
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/02_extract_umi/C_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/02_extract_umi/C_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 22
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/03_map/C_DNase.Aligned.sortedByCoord.out.bam
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/02_extract_umi/B_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/02_extract_umi/B_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/03_map/B_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 14
+    reason: Forced execution
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/02_extract_umi/A_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/02_extract_umi/A_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/03_map/A.Aligned.sortedByCoord.out.bam
+    jobid: 2
+    reason: Forced execution
+    wildcards: sample=A
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/02_extract_umi/A_DNase_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/03_map/A_DNase.Aligned.sortedByCoord.out.bam
+    jobid: 6
+    reason: Forced execution
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/02_extract_umi/positive_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/03_map/positive.Aligned.sortedByCoord.out.bam
+    jobid: 42
+    reason: Forced execution
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/02_extract_umi/E_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/03_map/E.Aligned.sortedByCoord.out.bam
+    jobid: 34
+    reason: Forced execution
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/02_extract_umi/D_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/02_extract_umi/D_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam
+    jobid: 26
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/03_map/D.Aligned.sortedByCoord.out.bam
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/02_extract_umi/C_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    jobid: 18
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/03_map/C.Aligned.sortedByCoord.out.bam
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+
+[Thu Sep 12 13:06:36 2024]
+localrule map:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R1.fastq.gz, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/02_extract_umi/B_umi_R2.fastq.gz
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/03_map/B.Aligned.sortedByCoord.out.bam
+    jobid: 10
+    reason: Forced execution
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.

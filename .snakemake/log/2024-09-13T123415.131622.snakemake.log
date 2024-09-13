@@ -1,0 +1,146 @@
+host: megalon
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 80
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+all              1
+ciriquant       12
+total           13
+
+Select jobs to execute...
+Execute 12 jobs...
+
+[Fri Sep 13 12:34:17 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/04_dedup/A.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/A_circRNA.gtf
+    jobid: 1
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A/06_circRNA/A_circRNA.gtf
+    wildcards: sample=A
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/04_dedup/E.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/E_circRNA.gtf
+    jobid: 57
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E/06_circRNA/E_circRNA.gtf
+    wildcards: sample=E
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/04_dedup/C.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/C_circRNA.gtf
+    jobid: 29
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C/06_circRNA/C_circRNA.gtf
+    wildcards: sample=C
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/04_dedup/A_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/A_DNase_circRNA.gtf
+    jobid: 8
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/A_DNase/06_circRNA/A_DNase_circRNA.gtf
+    wildcards: sample=A_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/04_dedup/C_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/C_DNase_circRNA.gtf
+    jobid: 36
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/C_DNase/06_circRNA/C_DNase_circRNA.gtf
+    wildcards: sample=C_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/04_dedup/E_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/E_DNase_circRNA.gtf
+    jobid: 64
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/E_DNase/06_circRNA/E_DNase_circRNA.gtf
+    wildcards: sample=E_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/04_dedup/B.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/B_circRNA.gtf
+    jobid: 15
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B/06_circRNA/B_circRNA.gtf
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/04_dedup/D.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/D_circRNA.gtf
+    jobid: 43
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D/06_circRNA/D_circRNA.gtf
+    wildcards: sample=D
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/04_dedup/positive.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/positive_circRNA.gtf
+    jobid: 71
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive/06_circRNA/positive_circRNA.gtf
+    wildcards: sample=positive
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/04_dedup/B_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/B_DNase_circRNA.gtf
+    jobid: 22
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/B_DNase/06_circRNA/B_DNase_circRNA.gtf
+    wildcards: sample=B_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/04_dedup/positive_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/positive_DNase_circRNA.gtf
+    jobid: 78
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/positive_DNase/06_circRNA/positive_DNase_circRNA.gtf
+    wildcards: sample=positive_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
+
+[Fri Sep 13 12:34:18 2024]
+localrule ciriquant:
+    input: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R1.fastq, /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/04_dedup/D_DNase.Aligned.sortedByCoord.out.dedup_R2.fastq
+    output: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/D_DNase_circRNA.gtf
+    jobid: 50
+    reason: Missing output files: /home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/D_DNase/06_circRNA/D_DNase_circRNA.gtf
+    wildcards: sample=D_DNase
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../resources/tools/CIRIquant/CIRIquant_env
