@@ -1,0 +1,5 @@
+reference:
+  fasta: /home/jverwilt/resources/genome/chm13/chm13_MT_spikes.fa
+  gtf: /home/jverwilt/resources/gtf/chm13/chm13_MT_spikes.gtf
+  bwa_index: /home/jverwilt/resources/indexes/chm13/bwa_index/chm13_MT_spikes.fa
+  hisat_index: /home/jverwilt/resources/indexes/chm13/HISAT_index/genome
