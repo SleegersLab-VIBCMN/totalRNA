@@ -9,12 +9,15 @@ star_index = "/home/jverwilt/resources/indexes/chm13/STAR_index"
 hisat_index = "/home/jverwilt/resources/indexes/chm13/HISAT_index/genome"
 bwa_index = "/home/jverwilt/resources/indexes/chm13/bwa_index/"
 gtf = "/home/jverwilt/resources/gtf/chm13/chm13_MT_spikes.gtf"
+bed = "/home/jverwilt/resources/gtf/chm13/chm13_MT_spikes.bed"
 path = "/home/jverwilt/JV2408_tear_RNA/output/20240906_AV242402_4843/"
 config_circ = "/home/jverwilt/JV2408_tear_RNA/code/config.yml"
+prepare_deconv = "/home/jverwilt/JV2408_tear_RNA/code/chm13_MT_prepare_deconv.tsv"
+matrix_deconv = ""
 
 rule all: 
     input:
-        expand(os.path.join(path, "{sample}/06_circRNA/{sample}_circRNA.gtf"), sample=samples)
+        os.path.join(path, "multiqc_report.html")
 
 rule combine:
     input:
@@ -110,4 +113,63 @@ rule ciriquant:
     conda:
         "/home/jverwilt/resources/tools/CIRIquant/CIRIquant_env"
     shell:
-        "CIRIquant --config {params.config_circ} -t 2 -1 {input.R1} -2 {input.R2} -o {params.path}{wildcards.sample}/06_circRNA/ -p {wildcards.sample}_circRNA"
+        "CIRIquant --config {params.config_circ} -l 2 -t 2 -1 {input.R1} -2 {input.R2} -o {params.path}{wildcards.sample}/06_circRNA/ -p {wildcards.sample}_circRNA"
+
+rule prepare_deconvolution:
+    input:
+        os.path.join(path, "{sample}/05_count/{sample}_htseq_dedup_counts.txt")
+    output:
+        os.path.join(path, "{sample}/07_deconv/{sample}_todeconvolve.csv")
+    params:
+        prepare_deconv = prepare_deconv
+    shell:
+        "Rscript /home/jverwilt/JV2408_tear_RNA/code/prepare_deconvolution.R {input} {params.prepare_deconv} {wildcards.sample} {output}"
+
+
+rule deconvolution:
+    input:
+        os.path.join(path, "{sample}/07_deconv/{sample}_todeconvolve.csv")
+    output:
+        os.path.join(path, "{sample}/07_deconv/{sample}_deconvolutionCoefs.csv")
+    params:
+        path = path
+    shell:
+        """
+        cd /home/jverwilt/resources/tools/deconvolution/deconvolve_cfrna_tutorial
+        python3 -c 'import deconvolve as deconv; deconv.main(1, "{input}", ["{wildcards.sample}"] , "nuSVR", "{wildcards.sample}", "{params.path}{wildcards.sample}/07_deconv/", jackknife = False)'
+        """
+
+rule rseqc:
+    input:
+        dedup=os.path.join(path, "{sample}/04_dedup/{sample}.Aligned.sortedByCoord.out.dedup.bam"),
+        raw=os.path.join(path, "{sample}/03_map/{sample}.Aligned.sortedByCoord.out.bam")
+    output:
+        bam_stat_dedup=os.path.join(path, "{sample}/08_rseqc/{sample}_dedup_bam_stat.txt"),
+        bam_stat_raw=os.path.join(path, "{sample}/08_rseqc/{sample}_raw_bam_stat.txt"),
+        strandedness=os.path.join(path, "{sample}/08_rseqc/{sample}_strandedness.txt")
+    params:
+        bed = bed
+    shell:
+        """
+        bam_stat.py -i {input.dedup} > {output.bam_stat_dedup}
+        bam_stat.py -i {input.raw} > {output.bam_stat_raw}
+        infer_experiment.py -r {params.bed} -i {input.dedup} > {output.strandedness}
+        """
+
+rule fastqc:
+    input:
+        R1=os.path.join(path, "{sample}/01_combine/{sample}_R1.fastq.gz"),
+        R2=os.path.join(path, "{sample}/01_combine/{sample}_R2.fastq.gz"),
+        bam=os.path.join(path, "{sample}/04_dedup/{sample}.Aligned.sortedByCoord.out.dedup.bam")
+    output:
+        os.path.join(path, "{sample}/08_fastqc/")
+    shell:
+        "fastqc -o {output} {input.R1} {input.R2} {input.bam}"
+
+rule multiqc:
+    input:
+        path
+    output:
+        os.path.join(path, "multiqc_report.html")
+    shell:
+        "multiqc {input} -d --filename stdout > {output}"
